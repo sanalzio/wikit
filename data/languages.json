@@ -1,4 +1,5 @@
 {
+  "default":"en",
   "ab":{
     "name":"Abkhaz",
     "nativeName":"аҧсуа"
@@ -204,7 +205,7 @@
   "de":{
     "name":"German",
     "nativeName":"Deutsch",
-    "disambig": "Begriffskl�rung"
+    "disambig": "Begriffskl�rung"
   },
   "el":{
     "name":"Greek, Modern",
@@ -593,7 +594,7 @@
   "es":{
     "name":"Spanish; Castilian",
     "nativeName":"español, castellano",
-    "disambig": "desambiguaci�n"
+    "disambig": "desambiguaci�n"
   },
   "su":{
     "name":"Sundanese",
