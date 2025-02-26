@@ -21,7 +21,7 @@ if (argv.version || argv.v) printVersionAndExit();
 if (argv.name || argv.n) printNameAndExit();
 
 // If no query, print usage and exit
-if (argv._.length == 0&& argv.r==null && argv.random==null) printUsageAndExit();
+if (argv._.length == 0 && argv.r==null && argv.random==null && argv.lang==null && argv.l==null) printUsageAndExit();
 
 const wiki = require('wtf_wikipedia');
 const inquirer = require('inquirer');
@@ -61,6 +61,11 @@ if (argv.lang || argv.l) {
   if (!validLanguageCode(_lang)) {
     console.log(`${Fore.Red}Unrecognized language code: ${Fore.Yellow}${_lang}${Fore.Reset}`);
     process.exit(1);
+  }
+  if (argv._.length == 0 && argv.r==null && argv.random==null) {
+    conf.set('lang', _lang);
+    console.log(`Language setting is set to '${Fore.Green}${_lang}${Fore.Reset}'.`);
+    process.exit(0);
   }
 }
 if (argv.d) {

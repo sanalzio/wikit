@@ -1,3 +1,7 @@
+# 4.5.1
+
+- This feature has been added: [Issue#49](https://github.com/KorySchneider/wikit/issues/49).
+
 # 4.5.0
 
 - The project was harmonized with Bun.
